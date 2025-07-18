@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body, .app-root {
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --primary: #2563eb;
+  --accent: #7c3aed;
+}
+
+.text-primary, .btn-primary, .border-primary {
+  --bs-primary: var(--primary);
+}
+.text-accent, .border-accent {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+.bg-accent {
+  background: var(--accent) !important;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+.dark-mode .bg-light {
+  background: #1e293b !important;
+}
+.dark-mode .bg-white {
+  background: #0f172a !important;
+}
+.dark-mode .text-dark {
+  color: #f1f5f9 !important;
+}
+.dark-mode .text-primary {
+  color: #7c3aed !important;
+}
+.dark-mode .btn-primary {
+  background: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
+.dark-mode .card, .dark-mode .contact-form, .dark-mode .why-card, .dark-mode .service-card, .dark-mode .testimonial-card {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+/* Hero background illustration */
+.hero-bg {
+  background: linear-gradient(120deg, #6366f1 10%, #f472b6 90%);
+  opacity: 0.07;
+  z-index: 0;
+}
+
+/* Bootstrap gap utility for flex (for older versions) */
+.gap-3 > * { margin-right: 1rem; }
+.gap-4 > * { margin-right: 1.5rem; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-section { padding-top: 3rem; padding-bottom: 3rem; }
+} 
