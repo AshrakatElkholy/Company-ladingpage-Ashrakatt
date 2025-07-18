@@ -55,8 +55,8 @@ function Hero() {
   return (
     <section id="hero" className="hero-section d-flex align-items-center justify-content-center text-center position-relative w-100">
       <div className="container-fluid position-relative z-1 py-5 px-4">
-        <h1 className="display-4 fw-bold mb-3">{company.slogan}</h1>
-        <p className="lead mb-4">{company.description}</p>
+        <h1 className="display-4 fw-bold mb-3" style={{ color: '#000' }}> {company.slogan} </h1>
+        <p className="lead mb-4" style={{ color: '#000' }}> {company.description} </p>
         <a href="#contact" className="btn btn-primary btn-lg shadow">Get Started</a>
       </div>
       <div className="hero-bg position-absolute top-0 start-0 w-100 h-100"></div>

@@ -34,11 +34,24 @@ body, .app-root {
 .dark-mode .bg-white {
   background: #0f172a !important;
 }
-.dark-mode .text-dark {
+.dark-mode .text-dark,
+.dark-mode .text-secondary,
+.dark-mode .text-muted,
+.dark-mode .text-center,
+.dark-mode .text-primary,
+.dark-mode .nav-link,
+.dark-mode .fw-bold,
+.dark-mode .fw-semibold,
+.dark-mode .lead,
+.dark-mode .form-label,
+.dark-mode .form-control,
+.dark-mode .about-section,
+.dark-mode .footer,
+.dark-mode .contact-form,
+.dark-mode .why-card,
+.dark-mode .service-card,
+.dark-mode .testimonial-card {
   color: #f1f5f9 !important;
-}
-.dark-mode .text-primary {
-  color: #7c3aed !important;
 }
 .dark-mode .btn-primary {
   background: #7c3aed !important;
@@ -46,6 +59,33 @@ body, .app-root {
 }
 .dark-mode .card, .dark-mode .contact-form, .dark-mode .why-card, .dark-mode .service-card, .dark-mode .testimonial-card {
   background: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+.dark-mode .input-group-text {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.dark-mode .form-control {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.dark-mode .form-control:focus {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #7c3aed !important;
+}
+.dark-mode .nav-link {
+  color: #f1f5f9 !important;
+}
+.dark-mode .nav-link:hover, .dark-mode .nav-link:focus {
+  color: #7c3aed !important;
+}
+.dark-mode .footer, .dark-mode .footer * {
+  color: #f1f5f9 !important;
+}
+.dark-mode .fw-bold, .dark-mode .fw-semibold, .dark-mode .lead, .dark-mode .h5, .dark-mode .h6, .dark-mode .display-4, .dark-mode .display-5, .dark-mode .display-6 {
   color: #f1f5f9 !important;
 }
 
@@ -63,4 +103,26 @@ body, .app-root {
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero-section { padding-top: 3rem; padding-bottom: 3rem; }
+} 
+
+.hero-section {
+  background: #fff !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.03);
+}
+.hero-section h1,
+.hero-section p {
+  color: #000 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+.hero-section .btn-primary {
+  color: #fff !important;
+}
+
+.dark-mode .hero-section {
+  background: #181c24 !important;
+}
+.dark-mode .hero-section h1,
+.dark-mode .hero-section p {
+  color: #fff !important;
 } 
